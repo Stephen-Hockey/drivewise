@@ -1,0 +1,203 @@
+/* Stylesheet.css */
+
+/* Apply general styles to the entire application */
+.root {
+    -fx-background-color: #b3c0de; /* Background color of the entire application */
+}
+
+/* Apply styles to the title bar */
+.title {
+    -fx-background-color: #022d91; /* Background color of the title bar */
+    -fx-text-fill: white; /* Text color of the title bar */
+    -fx-font-size: 24px; /* Font size of the title text */
+}
+
+/* Apply the styles to the anchor pane boxes */
+.inner-pane {
+    -fx-border-color: #b3c0de; /* Border color */
+    -fx-background-color: #b3c0de;
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius (rounded corners) */
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-effect: null;
+    -fx-opacity: 0;
+}
+
+
+.progress-indicator {
+    -fx-progress-color: #022d91; /* Color of the line */
+    -fx-progress-stroke-width: 4; /* Width of the line */
+    -fx-progress-stroke-cap: round; /* Rounded line cap */
+}
+.tooltip {
+    -fx-background-color: #b3c0de;
+    -fx-text-fill: #0f0f0f;
+    -fx-font-size: medium;
+    -fx-opacity: 0.8;
+}
+
+.tab {
+    -fx-background-color: #b3c0de;
+    -fx-border-color: #022d91;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-insets: 0;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #022d91;
+}
+
+.tab:selected {
+    -fx-background-color: #022d91;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #b3c0de;
+}
+
+.tab:hover {
+    -fx-background-color: #fef44d;
+    -fx-cursor: hand;
+}
+
+.tab:hover .tab-label {
+    -fx-text-fill: #022d91;
+}
+
+.choice-box {
+    -fx-background-color: #022d91;
+}
+.choice-box .label {
+    -fx-text-fill: #b3c0de;
+}
+
+.choice-box:hover {
+    -fx-background-color: #fef44d;
+    -fx-cursor: hand;
+}
+.choice-box:hover .label {
+    -fx-text-fill: #022d91;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: #b3c0de;
+    -fx-text-fill: #022d91;
+}
+
+.choice-box .context-menu .menu-item:hover,
+.choice-box .context-menu:showing {
+    -fx-background-color: #fef44d;
+    -fx-text-fill: #022d91;
+}
+
+.button {
+    -fx-background-color: #022d91;
+    -fx-text-fill: #b3c0de;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #fef44d;
+    -fx-text-fill: #022d91;
+    -fx-cursor: hand;
+}
+
+/* Apply styles to the circular button */
+.button-circle {
+    -fx-background-radius: 50%; /* Make the background a perfect circle */
+    -fx-background-color: #fee3a3;
+    -fx-text-fill: white; /* Text color of the circular button */
+}
+
+.toggle-button {
+    -fx-background-color: #fee3a3;
+    -fx-border-color: #022d91;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-insets: 0;
+}
+
+.text-field {
+    -fx-background-color: #fee3a3;
+}
+.text-field:hover {
+    -fx-cursor: text;
+}
+
+.toggle-button:hover,
+.toggle-button:selected {
+    -fx-background-color: #fef44d;
+    -fx-cursor: hand;
+}
+
+.radio-button:hover .radio {
+    -fx-background-color: #fef44d;
+    -fx-background-insets: 0;
+    -fx-cursor: hand;
+}
+.radio-button .radio {
+    -fx-background-color: #fee3a3;
+    -fx-background-insets: 0;
+}
+.radio-button:selected .radio .dot {
+    -fx-background-color: #022d91;
+    -fx-background-insets: 0;
+}
+
+.slider .track,
+.slider .thumb {
+    -fx-background-color: #022d91;
+}
+
+.slider:hover .thumb {
+    -fx-cursor: hand;
+}
+
+.invalid-text-field {
+    -fx-text-box-border: red;
+}
+
+.advice-card-vbox {
+    -fx-background-color: linear-gradient(#022d91, #b3c0de);
+}
+
+.scroll-bar:vertical,
+.scroll-bar:horizontal{
+    -fx-background-color: #022d91;
+}
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button,
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color: #022d91;
+}
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #b3c0de;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: #b3c0de;
+}
+
+.scroll-pane {
+    -fx-background-color: #b3c0de;
+}
+
+.continue-button {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-insets: 0;
+}
+
+
+
+#welcomeLabel {
+    -fx-font-size: 24;
+    -fx-font-family: serif;
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="320.0" prefWidth="494.0" styleClass="inner-pane" stylesheets="@../stylesheets/import_popup.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng202.team7.controller.ClearDatabaseController">
+
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-weight: bold;" text="Clear Database" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" spacing="10.0">
+         <Button onAction="#confirmButtonClicked" text="Confirm" />
+         <Button fx:id="closeButton" onAction="#closeScene" text="Close" />
+         <BorderPane.margin>
+            <Insets bottom="5.0" right="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox alignment="CENTER" prefHeight="274.0" prefWidth="490.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text text="Warning: This action is irreversible. Please consider this before confirming."/>
+         </children>
+      </VBox>
+   </center>
+
+</BorderPane>

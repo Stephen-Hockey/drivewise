@@ -1,0 +1,29 @@
+.advice-card {
+    -fx-background-color: #fee3a3;
+
+    -fx-border-color: #022d91;
+    -fx-border-width: 2px;
+    -fx-background-radius: 5.5%; /* Rounded corners */
+    -fx-border-radius: 5%; /* Rounded corners */
+
+    -fx-border-insets: 10px;
+    -fx-border-style: solid;
+    -fx-background-insets: 10px;
+}
+
+.tooltip {
+    -fx-background-radius: 0%;
+}
+
+.close-card-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    /*-fx-padding: 0;*/
+}
+
+.close-card-button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: transparent;
+    -fx-background-bor: transparent;
+    -fx-font-weight: normal;
+}

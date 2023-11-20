@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600" prefWidth="800" style="-fx-background-color: #b3c0de;" stylesheets="@../stylesheets/graph.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng202.team7.controller.GraphController">
+    <center>
+        <VBox alignment="CENTER" spacing="10"> <!-- Added spacing attribute -->
+            <BarChart fx:id="yearBarChart" style="-fx-background-color: #fee3a3;">
+                <xAxis>
+                    <CategoryAxis fx:id="xAxis" side="BOTTOM" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis fx:id="yAxis" side="LEFT" />
+                </yAxis>
+            </BarChart>
+            <HBox alignment="CENTER">
+                <PieChart fx:id="severityPieChart" />
+                <PieChart fx:id="weatherPieChart" />
+            </HBox>
+            <Region prefHeight="20" /> <!-- Added a Region to add space below the BarChart -->
+        </VBox>
+    </center>
+</BorderPane>

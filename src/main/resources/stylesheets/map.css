@@ -1,0 +1,23 @@
+/* Stylesheet.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tooltip {
+    -fx-background-color: #b3c0de;
+    -fx-text-fill: #0f0f0f;
+    -fx-font-size: medium;
+    -fx-opacity: 0.8;
+}
+
+#map {
+    height: 100%;
+    background-color: #b3c0de;
+}
+.leaflet-control-attribution {
+    display: none;
+}
+

@@ -1,0 +1,32 @@
+/* Stylesheet.css */
+
+/* Apply general styles to the entire application */
+.root {
+    -fx-background-color: #f0f0f0; /* Background color of the entire application */
+}
+
+/* Apply styles to the title bar */
+.title {
+    -fx-background-color: #022d91; /* Background color of the title bar */
+    -fx-text-fill: white; /* Text color of the title bar */
+    -fx-font-size: 24px; /* Font size of the title text */
+}
+
+/* Apply the styles to the anchor pane boxes */
+.inner-pane {
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius (rounded corners) */
+}
+
+/* Apply styles to the circular button */
+.button-circle {
+    -fx-background-radius: 50%; /* Make the background a perfect circle */
+    -fx-text-fill: white; /* Text color of the circular button */
+}
+
+/* Apply hover effect to circular button */
+.button-circle:hover {
+    -fx-background-color: #b3c0de; /* Change the background color on hover */
+    -fx-cursor: hand; /* Change cursor on hover to indicate interactivity */
+}

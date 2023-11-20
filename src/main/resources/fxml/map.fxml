@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="932.0" stylesheets="@../stylesheets/map.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng202.team7.controller.MapController">
+   <center>
+       <StackPane>
+            <WebView fx:id="webView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+             <cursor>
+                <Cursor fx:constant="CROSSHAIR" />
+             </cursor>
+          </WebView>
+           <ProgressIndicator fx:id="loadingIndicator" cache="true" cacheHint="ROTATE" visible="false" />
+       </StackPane>
+   </center>
+</BorderPane>

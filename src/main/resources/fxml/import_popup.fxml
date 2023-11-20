@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="320.0" prefWidth="494.0" styleClass="inner-pane" stylesheets="@../stylesheets/clear_database_popup.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="seng202.team7.controller.ImportCSVController">
+
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" style="-fx-font-weight: bold;" text="Import CSV File" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" spacing="10.0">
+         <Button onAction="#clearDatabaseClicked" text="Clear Database">
+            <HBox.margin>
+               <Insets right="220.0" />
+            </HBox.margin>
+         </Button>
+         <Button onAction="#confirmButtonClicked" text="Confirm" />
+         <Button fx:id="closeButton" onAction="#closeScene" text="Close" />
+         <BorderPane.margin>
+            <Insets bottom="5.0" right="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <center>
+      <BorderPane prefHeight="265.0" prefWidth="461.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="494.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text> Warning: This process can take up to 20 seconds for the full crash dataset.</Text>
+               </children>
+            </VBox>
+         </bottom>
+<!--         <top>-->
+<!--            <VBox alignment="CENTER" prefHeight="50.0" prefWidth="614.0" BorderPane.alignment="TOP_CENTER">-->
+<!--               <children>-->
+<!--                  <Text text="Warning: It appears your Crash Database is empty.">-->
+<!--                     <font>-->
+<!--                        <Font size="14.0" />-->
+<!--                     </font></Text>-->
+<!--                  <Text text="Not to worry, you just need to import the crash CSV file." textAlignment="CENTER" wrappingWidth="268.880859375">-->
+<!--                     <font>-->
+<!--                        <Font size="14.0" />-->
+<!--                     </font></Text>-->
+<!--               </children>-->
+<!--            </VBox>-->
+<!--         </top>-->
+         <center>
+            <StackPane prefHeight="113.0" prefWidth="414.0" style="-fx-border-color: black; -fx-background-color: #d9d9d9;">
+
+               <VBox fx:id="fileInstructionsContainer" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="103.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+                  <children>
+                     <Text text="Drag your CSV file here">
+                        <font>
+                           <Font size="14.0" />
+                        </font></Text>
+                     <Text text="to upload the crash data.">
+                        <font>
+                           <Font size="14.0" />
+                        </font></Text>
+                     <Text text="OR">
+                        <font>
+                           <Font size="14.0" />
+                        </font></Text>
+                     <Button fx:id="browseFilesButton" alignment="CENTER" contentDisplay="CENTER" onAction="#browseFiles" text="Browse Files" />
+                  </children>
+               </VBox>
+               <HBox fx:id="fileInfoContainer" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" visible="false" StackPane.alignment="CENTER">
+                  <children>
+                     <Text fx:id="fileNameLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="File Name" />
+                     <Button mnemonicParsing="false" onAction="#removeFileClicked" text="X" />
+                  </children>
+               </HBox>
+               <BorderPane.margin>
+                  <Insets left="40.0" right="40.0" top="5.0" />
+               </BorderPane.margin>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </center>
+
+</BorderPane>
