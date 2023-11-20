@@ -12,7 +12,7 @@ This README file includes some useful information to help you get started with D
 
 ## Prerequisites
 - JDK >= 17 [click here to get the latest stable OpenJDK release (as of writing this README)](https://jdk.java.net/18/)
-- To populate the database, you'll need a valid CSV file of crashes. There will be one supplemented with this README. You may be lucky enough to be able to access more on [LEARN](https://learn.canterbury.ac.nz/course/view.php?id=18812&section=4).
+- To populate the database, you'll need a valid CSV file of crashes. There are examples of valid .csv files in this repo
 
 ## Features
 - Route creation for anywhere in Aotearoa, showing you what crashes have happened along your chosen route, and letting
